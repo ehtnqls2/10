@@ -5,14 +5,24 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	char src[]="The worst things to eat before you sleep";
-	char dst[100];
+	FILE*fp;
+	char str[30];
 	
-	strcpy(dst,src);
+	fp=fopen("sample.txt","w");
 	
-	printf("copied string:%s",dst);
+	printf("input a word:");
+	scanf(fp,"%s",str);
+	fprintf(fp,"%s\n",str);
 	
-	char str[30]="happy C programming";
-	printf("문자열\"%s\"의 길이:%i",str,strlen(str));
+	printf("input a word:");
+	scanf(fp,"%s",str);
+	fprintf(fp,"%s\n",str);
+	
+	printf("input a word:");
+	scanf(fp,"%s",str);
+	fprintf(fp,"%s\n",str);
+	
+	
+	fclose(fp);
 	
 }
