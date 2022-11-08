@@ -11,18 +11,18 @@ int main(void) {
 	fp=fopen("sample.txt","w");
 	
 	printf("input a word:");
-	scanf(fp,"%s",str);
-	fprintf(fp,"%s\n",str);
+	scanf("%s",str);
+	fprintf(fp,"%s",str);
 	
 	printf("input a word:");
-	scanf(fp,"%s",str);
-	fprintf(fp,"%s\n",str);
+	scanf("%s",str);
+	fprintf(fp,"%s",str);
 	
 	printf("input a word:");
-	scanf(fp,"%s",str);
-	fprintf(fp,"%s\n",str);
-	
+	scanf("%s",str);
+	fprintf(fp,"%s",str);
 	
 	fclose(fp);
 	
+
 }
